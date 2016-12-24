@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Bank {
 
 	String name;
@@ -9,7 +10,7 @@ public class Bank {
 	double usd;
 	double eur;
 	double rub;
-
+	
 	public void initBanks() {
 		Bank pb = new Bank();
 		Bank mb = new Bank();
@@ -35,59 +36,36 @@ public class Bank {
 		mb.rub = 0.48;
 		pumb.rub = 0.45;
 	}
-
-	public String CheckBank() {
+	
+	public String CheckBank(){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Введите название банк");
 		String myBank = sc.nextLine();
-		if (myBank.equals("ПриватБанк")) {
+		if(myBank == "ПриватБанк"){
 			System.out.println("Вы выбрали приватбанк");
-		}
-		if (myBank.equals("МегаБанк")) {
+		}if(myBank == "МегаБанк"){
 			System.out.println("Вы выбрали МегаБанк");
-		}
-		if (myBank.equals("ПУМБ")) {
+		}if(myBank == "МегаБанк"){
 			System.out.println("Вы выбрали ПУМБ");
-		} else {
+		}else{
 			System.out.println("такого банка нет");
 		}
 		return myBank;
 	}
-
-	public String CheckCourse() {
+	public String CheckCourse(){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Введите курс валют");
 		String cours = sc.nextLine();
-		if (cours.equals("USD")) {
+		if(cours == "USD"){
 			System.out.println("Вы выбрали курс долларов США");
-		} else if (cours.equals("EUR")) {
+		}else if(cours == "EUR"){
 			System.out.println("Вы выбрали курс евро");
-		} else if (cours.equals("RUB")) {
+		}else if(cours == "RUB"){
 			System.out.println("Вы выбрали курс рубля");
-		} else {
+		}else{
 			System.out.println("нет выбранного курса валют");
 		}
 		return cours;
 	}
 
-	public double ConvertationCurrencyUSD(){
-		initBanks();
-		Bank pbUsd.usd;
-		double money;
-		
-		switch (pbUsd) {
-		case usd:
-			
-			
-			break;
-
-		default:
-			break;
-		}
-		
-		return moneyUsd;
-		
-		
-	}
 }
-
